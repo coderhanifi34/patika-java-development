@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //degişkenleri oluştur
+        int mat;
+        int tur;
+        int kim;
+        int ata;
+        int cev;
+        int eko;
+        //scanner degişken belirle
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("mat notunuz :");
+        mat = inp.nextInt();
+
+        System.out.print("tur notunuz :");
+        tur = inp.nextInt();
+
+        System.out.print("kim notunuz :");
+        kim = inp.nextInt();
+
+        System.out.print("ata notunuz :");
+        ata = inp.nextInt();
+
+        System.out.print("cev notunuz :");
+        cev = inp.nextInt();
+
+        System.out.print("eko notunuz :");
+        eko = inp.nextInt();
+
+        int toplam = (mat + tur + kim + ata + cev + eko);
+        double sonuc = toplam / 6;
+        System.out.println(sonuc);
+
+        String gecis = (sonuc > 60) ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+        System.out.print(gecis);
+
+    }
+}
